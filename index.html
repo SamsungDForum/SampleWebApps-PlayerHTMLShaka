@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=1920, height=1080" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <title>PlayerHTMLShaka</title>
+    <script src="$WEBAPIS/webapis/webapis.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1 class="appName">PlayerHTMLShaka</h1>
+        <h2 class="appVersion">2.0.0</h2>
+        <div class="tvInfo">
+            <p class="firmware"></p>
+            <p class="model"></p>
+        </div>
+    </header>
+    <section class="main">
+        <p id="description">No description provided</p>
+        <section class="video-section">
+            <video id="video"></video>
+        </section>
+        <div class="background"></div>
+
+    </section>
+    <section class="logs">
+        <h2>Logs:</h2>
+        <div data-list-item class="logsContainer">
+
+        </div>
+    </section>
+    <section class="info">
+        <section class="info-container">
+            <h2>Info</h2>
+
+            <p>This application demonstrates usage of Shaka Player on Tizen TV. It allows to use HTML5 tag for playing DRM encrypted content.</p>
+
+        </section>
+    </section>
+    <section class="buttons" id="buttons">
+        <button data-list-item class="playpause">Play</button>
+        <button data-list-item class="stop">Stop</button>
+        <button data-list-item class="next">Next</button>
+        <button data-list-item class="previous">Previous</button>
+        <button data-list-item class="ff">Fast Forward</button>
+        <button data-list-item class="rw">Rewind</button>
+        <button data-list-item class="togglefullscreen">Toggle Fullscreen</button>
+
+        <button data-list-item class="toggle-info">Show/hide info</button>
+    </section>
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/keyhandler.js"></script>
+    <script src="./js/logger.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/init.js"></script>
+    <script src="./assets/shaka-player.compiled.js"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

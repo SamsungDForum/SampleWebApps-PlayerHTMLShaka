@@ -1,0 +1,53 @@
+.video-section {
+    width: 100%;
+    height: 96%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+#description {
+    top: 0;
+    height: 4%;
+    margin: 0;
+    text-align: center;
+}
+
+.background {
+    display: none;
+}
+
+.background.fullscreenMode {
+    display: block;
+    position: absolute;
+    background: #000;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.buttons.fullscreenMode {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    border-top: none;
+    z-index: 2;
+}
+
+#video.fullscreenMode {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
